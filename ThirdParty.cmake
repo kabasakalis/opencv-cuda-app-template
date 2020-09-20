@@ -1,0 +1,23 @@
+get_filename_component(LIB_REPOS "../lib_repos" REALPATH BASE_DIR "${CMAKE_SOURCE_DIR}")
+
+# opencv
+#set(BUILD_EXAMPLES OFF CACHE INTERNAL "") # add dependency to pkg-config
+#set(BUILD_TESTS OFF CACHE INTERNAL "")
+##set(BUILD_INFO_SKIP_EXTRA_MODULES OFF CACHE INTERNAL "")
+#set(OPENCV_SKIP_PYTHON_WARNING ON CACHE INTERNAL "")
+#set(WITH_CUDA ON CACHE INTERNAL "")
+#set(WITH_CUDDNN ON CACHE INTERNAL "")
+#set(OPENCV_DNN_CUDA ON CACHE INTERNAL "")
+#set(CUDA_FAST_MATH 1 CACHE INTERNAL "")
+#set(ENABLE_FAST_MATH 1 CACHE INTERNAL "")
+#set(CUDA_ARCH_BIN 7.5 CACHE INTERNAL "")
+#set(WITH_CUBLAS 1 CACHE INTERNAL "")
+#set(CUDA_NVCC_EXECUTABLE /opt/cuda/bin/nvcc CCHE INTERNAL "")
+#set(BUILD_opencv_cudalegacy OFF CACHE INTERNAL "")
+#set(OPENCV_EXTRA_MODULES_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../lib_repos/opencv_contrib/modules CACHE INTERNAL "")
+find_package(OpenCV REQUIRED)
+message(STATUS "OpenCV FOUND:  ${OpenCV_FOUND}")
+include_directories(${OpenCV_INCLUDE_DIRS})
+link_directories(${OpenCV_LIBRARY_DIRS})
+add_definitions(${OpenCV_DEFINITIONS})
+message(STATUS "OpenCV Libraries included:  ${OpenCV_LIBRARIES}")

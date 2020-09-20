@@ -1,0 +1,58 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build dir
+bin/
+gen/
+out/
+build/
+cmake-build-debug/
+cmake-build-release/
+lib/
+install/
+
+# Qt cache
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+
+# IDE project files
+*.sublime-project
+*.sublime-workspace
+
+# Local config windows
+_configure.bat
+_open-project.bat
+_start-cmake-gui.bat
+_start-cmd.bat
+
+# Local config unix
+.localconfig
+
+# Wiki
+wiki
