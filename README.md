@@ -56,6 +56,8 @@ Last, install OpenCV in your system with
 
 With successful installation of the CUDA enabled OpenCV libraries, `find_package(OpenCV REQUIRED)` in
  `ThirdParty.cmake` file will find and link the OpenCV libraries to your project.
+ You configure and build the application with CMake as usual.
+ See `ADAPT.md` on how to adapt the template to your application.
  
 Important: Your system must have a CUDA compatible Nvidia Driver installed and the version must be
 compatible CUDA version. See resources for more info. 
